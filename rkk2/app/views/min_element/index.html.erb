@@ -1,0 +1,10 @@
+<h1>Min Element App</h1>
+
+<p><%= @result %></p>
+
+<h2>Input Array</h2>
+<%= form_tag(root_path, method: :get) do %>
+  <%= label_tag 'arr_q', 'Array (comma-separated):' %>
+  <%= text_field_tag 'arr_q', @arr_q.join(', ') %>
+  <%= submit_tag 'Submit' %>
+<% end %>
